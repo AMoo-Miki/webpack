@@ -1,10 +1,11 @@
 {
-  "name": "webpack",
-  "version": "4.46.0",
+  "name": "@amoo-miki/webpack",
+  "version": "4.46.0-xxhash.1",
   "author": "Tobias Koppers @sokra",
   "description": "Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jsx, es7, css, less, ... and your custom stuff.",
   "license": "MIT",
   "dependencies": {
+    "@node-rs/xxhash": "^1.3.0",
     "@webassemblyjs/ast": "1.9.0",
     "@webassemblyjs/helper-module-context": "1.9.0",
     "@webassemblyjs/wasm-edit": "1.9.0",
@@ -17,7 +18,7 @@
     "eslint-scope": "^4.0.3",
     "json-parse-better-errors": "^1.0.2",
     "loader-runner": "^2.4.0",
-    "loader-utils": "^1.2.3",
+    "loader-utils": "^2.0.4",
     "memory-fs": "^0.4.1",
     "micromatch": "^3.1.10",
     "mkdirp": "^0.5.3",
@@ -25,7 +26,7 @@
     "node-libs-browser": "^2.2.1",
     "schema-utils": "^1.0.0",
     "tapable": "^1.1.3",
-    "terser-webpack-plugin": "^1.4.3",
+    "terser-webpack-plugin": "npm:@amoo-miki/terser-webpack-plugin@1.4.5-rc.2",
     "watchpack": "^1.7.4",
     "webpack-sources": "^1.4.1"
   },
@@ -87,8 +88,8 @@
     "val-loader": "^1.0.2",
     "vm-browserify": "~1.1.0",
     "wast-loader": "^1.5.5",
-    "webpack-dev-middleware": "^3.5.1",
     "webassembly-feature": "1.3.0",
+    "webpack-dev-middleware": "^3.5.1",
     "worker-loader": "^2.0.0",
     "xxhashjs": "^0.2.1"
   },
@@ -97,13 +98,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/webpack/webpack.git"
+    "url": "https://github.com/AMoo-Miki/webpack.git"
   },
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/webpack"
   },
-  "homepage": "https://github.com/webpack/webpack",
+  "homepage": "https://github.com/AMoo-Miki/webpack",
   "main": "lib/webpack.js",
   "web": "lib/webpack.web.js",
   "bin": "./bin/webpack.js",

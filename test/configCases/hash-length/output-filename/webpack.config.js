@@ -20,8 +20,8 @@ module.exports = [
 			chunkFilename: "[id].bundle1.[hash].js"
 		},
 		amd: {
-			expectedFilenameLength: 31,
-			expectedChunkFilenameLength: 33
+			expectedFilenameLength: 30,
+			expectedChunkFilenameLength: 32
 		}
 	},
 	{
@@ -42,8 +42,8 @@ module.exports = [
 			chunkFilename: "[id].bundle3.[chunkhash].js"
 		},
 		amd: {
-			expectedFilenameLength: 31,
-			expectedChunkFilenameLength: 33
+			expectedFilenameLength: 30,
+			expectedChunkFilenameLength: 32
 		}
 	},
 	{
@@ -53,7 +53,7 @@ module.exports = [
 			chunkFilename: "[id].bundle4.[hash:8].js"
 		},
 		amd: {
-			expectedFilenameLength: 31,
+			expectedFilenameLength: 29,
 			expectedChunkFilenameLength: 21
 		}
 	},
@@ -75,7 +75,7 @@ module.exports = [
 			chunkFilename: "[id].bundle6.[chunkhash:7].js"
 		},
 		amd: {
-			expectedFilenameLength: 31,
+			expectedFilenameLength: 30,
 			expectedChunkFilenameLength: 20
 		},
 		plugins: [new webpack.HotModuleReplacementPlugin()]
@@ -100,7 +100,7 @@ module.exports = [
 		},
 		target: "node",
 		amd: {
-			expectedFilenameLength: 31,
+			expectedFilenameLength: 30,
 			expectedChunkFilenameLength: 20
 		}
 	},
@@ -112,7 +112,7 @@ module.exports = [
 		},
 		target: "node",
 		amd: {
-			expectedFilenameLength: 31,
+			expectedFilenameLength: 30,
 			expectedChunkFilenameLength: 20
 		}
 	},
@@ -124,8 +124,8 @@ module.exports = [
 		},
 		target: "node",
 		amd: {
-			expectedFilenameLength: 32,
-			expectedChunkFilenameLength: 34
+			expectedFilenameLength: 31,
+			expectedChunkFilenameLength: 33
 		}
 	},
 	{
@@ -148,8 +148,8 @@ module.exports = [
 		},
 		target: "async-node",
 		amd: {
-			expectedFilenameLength: 32,
-			expectedChunkFilenameLength: 34
+			expectedFilenameLength: 31,
+			expectedChunkFilenameLength: 33
 		}
 	},
 	{
@@ -174,8 +174,8 @@ module.exports = [
 		},
 		target: "web",
 		amd: {
-			expectedFilenameLength: 32,
-			expectedChunkFilenameLength: 34
+			expectedFilenameLength: 31,
+			expectedChunkFilenameLength: 33
 		}
 	},
 	{
@@ -202,8 +202,8 @@ module.exports = [
 		},
 		target: "webworker",
 		amd: {
-			expectedFilenameLength: 32,
-			expectedChunkFilenameLength: 34
+			expectedFilenameLength: 31,
+			expectedChunkFilenameLength: 33
 		}
 	},
 	{
